@@ -13,7 +13,7 @@
 | DELETE | `/api/admin/users/{id}` | Удаление пользователя и привязанных кодов | ADMIN       | id пользователя в path                                                                                                                      |
 | POST   | `/api/admin/otp_config` | Изменение конфига                         | ADMIN       | lifetime (секунды), length                                                                                                                  |
 | GET    | `/api/admin/otp_config` | Получение конфига                         | ADMIN       | -                                                                                                                                           |
-|        |                         |                                           | -           |                                                                                                                                             |
+|        |                         |                                           |             |                                                                                                                                             |
 | POST   | `/api/otp/generate`     | Генерация OTP кода                        | USER, ADMIN | operation_id                                                                                                                                |
 | POST   | `/api/otp/validate`     | Проверка OTP кода                         | USER, ADMIN | operation_id, value                                                                                                                         |
 
