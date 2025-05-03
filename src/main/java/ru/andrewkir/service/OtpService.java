@@ -1,7 +1,6 @@
 package ru.andrewkir.service;
 
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 import ru.andrewkir.config.exception.RequestException;
 import ru.andrewkir.model.OtpStatus;
@@ -17,8 +16,6 @@ import ru.andrewkir.model.repository.OtpRepository;
 import java.security.SecureRandom;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.time.temporal.ChronoUnit;
-import java.time.temporal.TemporalUnit;
 import java.util.List;
 import java.util.NoSuchElementException;
 

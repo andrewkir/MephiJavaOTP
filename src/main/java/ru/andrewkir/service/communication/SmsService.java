@@ -7,11 +7,8 @@ import org.smpp.TCPIPConnection;
 import org.smpp.pdu.BindResponse;
 import org.smpp.pdu.BindTransmitter;
 import org.smpp.pdu.SubmitSM;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
-import javax.mail.Authenticator;
-import javax.mail.PasswordAuthentication;
 import java.util.Properties;
 
 @Slf4j

@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import ru.andrewkir.model.dto.JwtResponse;
 import ru.andrewkir.model.dto.LoginRequest;
 import ru.andrewkir.model.dto.RegisterRequest;
-import ru.andrewkir.model.dto.JwtResponse;
 import ru.andrewkir.service.AuthenticationService;
 
 @RestController
@@ -23,11 +23,11 @@ public class AuthController {
     }
 
     @PostMapping("/login")
-    public ResponseEntity<JwtResponse> login(@RequestBody @Valid LoginRequest registerRequest) {
+    public ResponseEntity<JwtResponse> login(@RequestBody @Valid LoginRequest loginRequest) {
         log.info("POST login request");
         return authenticationService.authenticate(
-                registerRequest.getUsername(),
-                registerRequest.getPassword()
+                loginRequest.getUsername(),
+                loginRequest.getPassword()
         );
     }
 

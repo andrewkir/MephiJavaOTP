@@ -10,7 +10,6 @@ import org.springframework.security.core.userdetails.UserDetails;
 import ru.andrewkir.model.OtpDestination;
 import ru.andrewkir.model.UserRoles;
 
-import java.time.LocalDateTime;
 import java.util.Collection;
 import java.util.List;
 
@@ -24,7 +23,7 @@ public class User implements UserDetails {
     @Getter
     private int id;
 
-    @Column(nullable = false)
+    @Column(nullable = false, unique = true)
     @Setter
     @Getter
     private String username;

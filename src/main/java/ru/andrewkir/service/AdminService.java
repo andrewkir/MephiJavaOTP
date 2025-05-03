@@ -1,9 +1,7 @@
 package ru.andrewkir.service;
 
-import jakarta.transaction.Transactional;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import ru.andrewkir.config.exception.RequestException;
 import ru.andrewkir.model.dto.OtpConfigRequest;
 import ru.andrewkir.model.entity.Otp;
 import ru.andrewkir.model.entity.OtpConfig;
