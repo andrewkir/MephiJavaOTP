@@ -17,7 +17,7 @@
 | POST   | `/api/otp/generate`     | Генерация OTP кода                        | USER, ADMIN | operation_id                                                                                                                                |
 | POST   | `/api/otp/validate`     | Проверка OTP кода                         | USER, ADMIN | operation_id, value                                                                                                                         |
 
-**В каждый запрос (кроме /api/auth/*) необходимо прикладывать в хедер токен доступа (В формате Authorization: Bearer <TOKEN>), полученный при авторизации**
+**В каждый запрос (кроме /api/auth/*) необходимо прикладывать в хедер токен доступа (В формате Authorization: Bearer \<TOKEN\>), полученный при авторизации**
 
 ### Перед запуском
 
